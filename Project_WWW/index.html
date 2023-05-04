@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- this is for the third class container of three divisions-->
+
+    <link rel="stylesheet" href="styles1.css">
+
+
+    <title> ~Project_WWW~ </title>
+
+    
+</head>
+
+    <header>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <a class="navbar-brand" href="#">
+                <h3> ~~Project_WWW~~ </h3>
+              </a>
+            </div>
+            <div class="col-md-8">
+              <nav class="navbar navbar-expand-sm justify-content-end">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="about_us.html">ABOUT US</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Sign_In.html">SIGN IN</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Log_In.html">LOGIN</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="images/image1.jpg" alt="Image 1">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/image2.jpg" alt="Image 2">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/image3.jpg" alt="Image 3">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/image4.jpg" alt="Image 4">
+            </div>
+          
+           <!-- 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           --> 
+            
+          </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 levitate" style="background-color: bisque;">
+              <h2>Section 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tellus ac lectus consectetur, eu porttitor felis eleifend. Suspendisse potenti. Ut vel dapibus metus. Duis non tortor justo. Integer vel mauris mauris. Sed dapibus sed enim sit amet bibendum. Fusce sed libero vel mauris luctus dictum eget id nulla.</p>
+            </div>
+
+            <div class="col-sm-4 levitate" style="background-color: bisque;">
+              <h2>Section 2</h2>
+              <p>Donec pulvinar massa non diam sagittis feugiat. Maecenas finibus ligula at felis auctor, eu faucibus nunc hendrerit. Nulla vel ex vitae tellus ultricies congue. Sed tincidunt sem at justo eleifend bibendum. Ut lobortis, erat nec ullamcorper gravida, turpis nibh dictum nunc, at sollicitudin dolor ante vel mi.</p>
+            </div>
+
+            <div class="col-sm-4 levitate" style="background-color: bisque;">
+              <h2>Section 3</h2>
+              <p>Etiam non tortor nec nibh faucibus euismod. Integer quis enim at sapien sagittis pulvinar. Duis ullamcorper turpis elit, eget faucibus massa facilisis vel. Nunc semper aliquam ligula, id molestie velit hendrerit a. Sed viverra lacus quis metus dapibus, sit amet ultricies purus posuere. Fusce interdum lorem ut sapien blandit pretium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="levitate">
+          <pre>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod <br>
+            magna ac lorem rhoncus, non sollicitudin ex hendrerit. Maecenas ut metus <br>
+            sit amet lacus aliquam bibendum. Nam vestibulum velit vitae urna bibendum <br>
+            ullamcorper. Curabitur consectetur malesuada turpis sit amet sagittis.  <br>
+            Vivamus ac nulla mi. Duis quis enim vel lectus bibendum tincidunt sed id <br>
+            tellus. Etiam eu ex ligula. Donec non velit quis metus bibendum tincidunt <br>
+            in a mi.
+          </pre>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+     <!-- Bootstrap JS and jQuery --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script>
+      var slideIndex = 0;
+    showSlides();
+
+   function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.d2isplay = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+
+    setTimeout(showSlides, 5000); 
+    
+    
+    showSlides(); // Change image every 4 seconds
+    }
+    
+    </script>
+    <!-- this is for the third container for the fade-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>   
+</html>
